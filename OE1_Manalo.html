@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Registration Form</title>
+    <script type="text/javascript" src="OE1_Manalo.js"></script>
+    <link rel="stylesheet" href="OE1_Manalo.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  </head>
+  
+  <body>
+    <div class="main-block">
+      <h1>Student Profile</h1>
+      <form id = frmStudent>
+        <hr>
+
+        <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
+        <input type="text" name="name" id="email" placeholder="LPU Email" required/>
+
+        <label id="icon" for="name"><i class="fas fa-user"></i></label>
+        <input type="text" name="name" id="fname" placeholder="Name" required/>
+
+        <label id="icon" for="name"><i class="fas fa-user"></i></label>
+        <input type="text" name="name" id="age" placeholder="Age" required/>
+
+        <label id="icon" for="name"><i class="fas fa-user"></i></label>
+        <input type="text" name="name" id="gender" placeholder="Gender" required/>
+
+        <label id="icon" for="name"><i class="fas fa-user"></i></label>
+        <input type="text" id="studentNo" placeholder="Student Number" required/>
+
+        <label id="icon" for="name"><i class="fas fa-user"></i></label>
+        <input type="text" id="course" placeholder="Course" required/>
+
+        <label id="icon" for="name"><i class="fas fa-user"></i></label>
+        <input type="text" id="contactNo" placeholder="Contact Number" required/>
+        
+        <label id="icon" for="name"><i class="fas fa-user"></i></label>
+        <input type="text" id="address" placeholder="Address" required/>
+
+        <div class="btn-block">
+          <p>Before clicking the submit button. <br> Please make sure all the information is correct.</p>
+          <button type="submit" onclick="studentProfile()">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
