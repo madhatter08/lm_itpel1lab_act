@@ -6,13 +6,13 @@ function salarySystem() {
 
     const TAX1=0.12;
     const TAX2=0.10;
-    const TAX3=0.05;
+    const TAX3=0.08;
     //equations for gross pay and tax range
     gross_pay = rate_per_hour * hours_work;
     var net_pay;
     var _12tax = gross_pay * TAX1;
     var _10tax = gross_pay * TAX2;
-    var _5tax = gross_pay * TAX3;
+    var _8tax = gross_pay * TAX3;
 
     document.write(
         "-----------SALARY SYSTEM-----------" + "<br />" +
@@ -33,8 +33,8 @@ function salarySystem() {
         net_pay = gross_pay - _10tax; //with 10% VAT
         document.write("Tax rate                : 10%");
     } else if (gross_pay < 15000){
-        net_pay = gross_pay - _5tax; //with 5% VAT
-        document.write("Tax rate                : 5%");
+        net_pay = gross_pay - _8tax; //with 8% VAT
+        document.write("Tax rate                : 8%");
     } else {
         document.write("Tax rate                : Invalid input")
     }
